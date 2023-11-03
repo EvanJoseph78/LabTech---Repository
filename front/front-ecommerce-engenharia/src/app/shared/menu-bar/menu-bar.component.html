@@ -1,28 +1,48 @@
 <div class="title-bar__component">
+  <!-- Contêiner principal da barra de título -->
+
   <div class="title-bar__component-image_container">
-    <img src="" alt="" />
+    <!-- Contêiner para o logotipo -->
+
+    <img src="../../../assets/images/LabTechLogo.png" alt="LOGO" />
+    <!-- Uma imagem com um caminho relativo para o logotipo -->
   </div>
+
   <div class="title-bar__nav-link">
-    <!-- router link permite rotas single page -->
+    <!-- Contêiner para os links de navegação -->
+
+    <!-- Link para a página "Home" usando roteamento do Angular -->
     <a
       [routerLink]="['/']"
       [routerLinkActive]="['activated']"
       [routerLinkActiveOptions]="{ exact: true }"
       >Home</a
     >
+
+    <!-- Link para a página "Loja Virtual" usando roteamento do Angular -->
     <a [routerLink]="['/produtos']" [routerLinkActive]="['activated']"
       >Loja Virtual</a
     >
+
+    <!-- Link para a página "Próteses" usando roteamento do Angular -->
     <a [routerLink]="['/produtos']" [routerLinkActive]="['/']">Próteses</a>
+
+    <!-- Link "Serviços" sem roteamento -->
     <a href="#">Serviços</a>
+
+    <!-- Link "Contato" sem roteamento -->
     <a href="#">Contato</a>
   </div>
 
   <div class="title-bar__nav-buttons">
+    <!-- Contêiner para botões de navegação e pesquisa -->
+
+    <!-- Campo de entrada de pesquisa -->
     <div class="search-container">
       <input type="text" class="search-input" placeholder="Pesquisar..." />
     </div>
 
+    <!-- Botão de pesquisa com uma imagem -->
     <button class="search-button">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/VisualEditor_-_Icon_-_Search.svg/1200px-VisualEditor_-_Icon_-_Search.svg.png"
@@ -30,7 +50,9 @@
       />
     </button>
 
+    <!-- Contêiner para botões de navegação -->
     <div class="nav-buttons_image">
+      <!-- Botão com um ícone -->
       <a href="#">
         <img
           src="https://cdn-icons-png.flaticon.com/128/2603/2603906.png"
@@ -39,12 +61,15 @@
       </a>
     </div>
 
+    <!-- Contêiner para botões de navegação -->
     <div class="nav-buttons_image">
-      <a href="#"
-        ><img
+      <!-- Botão com um ícone -->
+      <a href="#">
+        <img
           src="https://cdn-icons-png.flaticon.com/128/1332/1332655.png"
           alt=""
-      /></a>
+        />
+      </a>
     </div>
   </div>
 </div>

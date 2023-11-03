@@ -1,7 +1,7 @@
+/* Estilos para o contêiner principal da barra de título */
 .title-bar__component {
-  /* position: fixed; */
+  /* Define a altura da barra de título */
   height: 90px;
-  /* border: 1px solid blue; */
   margin-left: 10px;
   margin-right: 10px;
   display: flex;
@@ -9,55 +9,65 @@
   justify-content: space-between;
 }
 
+/* Estilos para os links de navegação quando ativados */
 .title-bar__nav-link a.activated {
-  border-top: 2px solid rgb(0, 0, 0);
-  border-bottom: 2px solid rgb(0, 0, 0);
-  transition: border 0.1s ease;
+  border-top: 2px solid rgb(0, 0, 0); /* Barra superior quando ativado */
+  border-bottom: 2px solid rgb(0, 0, 0); /* Barra inferior quando ativado */
+  transition: border 0.1s ease; /* Efeito de transição para as bordas */
 }
 
+/* Estilos para os links de navegação ativados ao passar o mouse */
 .title-bar__nav-link a.activated:hover {
   border-top: 2px solid rgb(0, 0, 0); /* Barra superior ao passar o mouse */
   border-bottom: 2px solid rgb(0, 0, 0); /* Barra inferior ao passar o mouse */
 }
 
+/* Estilos para a imagem do logotipo dentro do contêiner */
 .title-bar__component-image_container > img {
-  max-width: 218px;
+  max-width: 218px; /* Define a largura máxima da imagem do logotipo */
 }
 
+/* Estilos para o contêiner dos botões de navegação */
 .title-bar__nav-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Estilos para o contêiner dos links de navegação */
 .title-bar__nav-link {
   display: flex;
-  gap: 10px;
-  list-style: none;
-  text-transform: uppercase;
+  gap: 10px; /* Espaçamento entre os elementos do contêiner */
+  list-style: none; /* Remove a formatação padrão de lista */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
 }
 
+/* Estilos para os links de navegação dentro do contêiner */
 .title-bar__nav-link > a {
-  color: black;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  color: black; /* Cor do texto dos links */
+  text-decoration: none; /* Remove decoração de link sublinhado */
+  font-family: Arial, Helvetica, sans-serif; /* Família de fontes */
+  font-size: 20px; /* Tamanho da fonte */
 }
 
+/* Estilos para os links de navegação ao passar o mouse */
 .title-bar__nav-link > a:hover {
-  color: gray;
+  color: gray; /* Cor do texto dos links ao passar o mouse */
 }
 
+/* Estilos para a imagem dentro do botão de pesquisa */
 .search-button > img {
-  max-width: 25px;
+  max-width: 25px; /* Define a largura máxima da imagem do botão de pesquisa */
 }
 
+/* Estilos para os contêineres dos botões de navegação */
 .title-bar__nav-buttons {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 10px; /* Espaçamento entre os elementos do contêiner */
 }
 
+/* Estilos para as imagens dos botões de navegação */
 .nav-buttons_image > a > img {
-  max-width: 25px;
+  max-width: 25px; /* Define a largura máxima das imagens dos botões de navegação */
 }
